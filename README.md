@@ -19,3 +19,6 @@
 * 机器学习算法 常规包括分类,回归,聚类和协同过滤
 * 特征工程 特征抽取,转换,选择及降维
 * 管道 构造,评估和调整
+
+#### spark.sql
+[sql 基本使用](https://github.com/bobxwang/predict-stock-in-spark/blob/master/src/main/scala/com/bob/sql/SSql.scala)
