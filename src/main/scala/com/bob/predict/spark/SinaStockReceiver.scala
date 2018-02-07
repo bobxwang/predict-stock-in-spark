@@ -7,7 +7,7 @@ import org.apache.spark.streaming.receiver.Receiver
 import scala.io.Source
 
 /**
-  * Created by wangxiang on 18/2/7.
+  * Created by wangxiang on 18/1/7.
   */
 class SinaStockReceiver(list: List[String]) extends Receiver[String](StorageLevel.MEMORY_AND_DISK_2) with Logging {
 

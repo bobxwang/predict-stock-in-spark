@@ -1,7 +1,7 @@
 package com.bob.predict.stock
 
 /**
-  * Created by wangxiang on 18/2/7.
+  * Created by wangxiang on 18/1/7.
   */
 class SinaStock {
   var code: String = "" //“sh601006”，股票代码

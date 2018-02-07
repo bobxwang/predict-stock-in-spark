@@ -8,7 +8,7 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 import scala.util.Random
 
 /**
-  * Created by wangxiang on 18/2/7.
+  * Created by wangxiang on 18/1/7.
   */
 object Launcher extends App {
 
