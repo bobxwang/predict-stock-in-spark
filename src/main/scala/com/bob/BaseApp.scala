@@ -1,4 +1,4 @@
-package com.bob.mlib
+package com.bob
 
 import org.apache.spark.sql.SparkSession
 

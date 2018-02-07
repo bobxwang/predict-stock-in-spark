@@ -1,6 +1,6 @@
 package com.bob.mlib.featureextractor
 
-import com.bob.mlib.BaseApp
+import com.bob.BaseApp
 import org.apache.spark.ml.feature.Word2Vec
 
 /**

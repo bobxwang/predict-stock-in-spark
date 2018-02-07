@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sbt -Dspark.scope=provided clean assembly
+sbt -Dspark.scope=provided clean package
