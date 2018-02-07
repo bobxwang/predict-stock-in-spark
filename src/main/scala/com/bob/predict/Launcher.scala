@@ -21,7 +21,7 @@ object Launcher extends App {
   val sparkConf = new SparkConf().setAppName("SinaStock-CustomReceiver").setMaster("local[4]")
   val ssc = new StreamingContext(sparkConf, Seconds(1))
   ssc.checkpoint("./tmp")
-  val lines = ssc.receiverStream(new SinaStockReceiver())
+  val lines = ssc.receiverStream(new SinaStockReceiver(List("002230", "600516")))
   val words = lines.map(SinaStock(_))
   val stockState = words.map(
     sinaStock => (sinaStock.name, (sinaStock.curPrice + Random.nextFloat, -1))).filter(stock => !stock._1.isEmpty)
@@ -34,5 +34,6 @@ object Launcher extends App {
 
   ssc.start()
   ssc.awaitTermination()
+
   println("StockTrend")
 }
