@@ -15,6 +15,7 @@
 > 现在只是简单的打印出
 
 #### spark.ml
+> Spark 2.0后,将会慢慢废弃掉 RDD-based 的Api(spark.mllib), 转向基于 DataFrame-based 的Api(spark.ml package)
 * 机器学习算法 常规包括分类,回归,聚类和协同过滤
 * 特征工程 特征抽取,转换,选择及降维
 * 管道 构造,评估和调整
