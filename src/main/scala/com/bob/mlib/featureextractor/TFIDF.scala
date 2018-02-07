@@ -1,5 +1,6 @@
-package com.bob.mlib
+package com.bob.mlib.featureextractor
 
+import com.bob.mlib.BaseApp
 import org.apache.spark.ml.feature.{HashingTF, IDF, Tokenizer}
 
 /**
@@ -13,6 +14,7 @@ object TFIDF extends BaseApp {
     (1, "Logistic regression models are neat")
   )).toDF("label", "sentence")
 
+  // Tokenizer将文本划分为独立个体属分词器
   val tokenizer = new Tokenizer().setInputCol("sentence").setOutputCol("words")
   val wordsData = tokenizer.transform(sentenceData)
   val hashingTF = new HashingTF()
@@ -25,3 +27,10 @@ object TFIDF extends BaseApp {
   val rescaledData = idfModel.transform(featurizedData)
   rescaledData.select("features", "label").take(3).foreach(println)
 }
+
+/**
+  * RegexTokenizer 基于正则表达式提供更多的划分选项
+  * new RegexTokenizer().setPattern("\\W")  // alternatively .setPattern("\\w+").setGaps(false)
+  *
+  * StopWordsRemover 停用词为在文档中频繁出现，但未承载太多意义的词语，他们不应该被包含在算法输入中。
+  */

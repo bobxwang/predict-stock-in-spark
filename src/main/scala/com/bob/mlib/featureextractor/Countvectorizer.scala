@@ -1,5 +1,6 @@
-package com.bob.mlib
+package com.bob.mlib.featureextractor
 
+import com.bob.mlib.BaseApp
 import org.apache.spark.ml.feature.{CountVectorizer, CountVectorizerModel}
 
 /**
