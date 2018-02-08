@@ -22,3 +22,6 @@
 
 #### spark.sql
 [sql 基本使用](https://github.com/bobxwang/predict-stock-in-spark/blob/master/src/main/scala/com/bob/sql/SSql.scala)
+
+#### breeze visual
+[scala 图形库](https://github.com/scalanlp/breeze/)
