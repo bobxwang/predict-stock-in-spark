@@ -20,6 +20,10 @@
 * 特征工程 特征抽取,转换,选择及降维
 * 管道 构造,评估和调整
 
+#### spark.graphx
+> 图处理框架,基于Spark平台提供对图计算和图挖掘简洁易用的而丰富接口,方便了对分布式图处理需求
+* 社交网络人跟人之间的关系链
+
 #### spark.sql
 [sql 基本使用](https://github.com/bobxwang/predict-stock-in-spark/blob/master/src/main/scala/com/bob/sql/SSql.scala)
 
