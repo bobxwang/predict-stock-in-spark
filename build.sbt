@@ -4,10 +4,10 @@ name := "predict-stock-in-spark"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.8"
 
 val spark_scope = System.getProperty("spark.scope", "compile")
-val spark_version = System.getProperty("spark.version", "2.2.1")
+val spark_version = System.getProperty("spark.version", "2.4.2")
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8", "-Xlint")
 initialize := {
