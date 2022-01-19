@@ -14,7 +14,7 @@ object Runner extends BaseApp {
   val batch = 5 //计算周期（秒）
   spark.sparkContext.getConf.setAppName("analise-nginx-log")
   val ssc = new StreamingContext(spark.sparkContext, Seconds(batch))
-  val input = "file:///Users/wangxiang/Desktop/nginx-log"
+  val input = "**-log"
   val lines = namedTextFileStream(ssc, input)
 
   // lines.count().print()
